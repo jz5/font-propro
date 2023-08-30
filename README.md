@@ -1,7 +1,9 @@
 No redistribution of files
 ファイルの転載禁止
 
-# フォント 「プロプロ」
+# フォント 「プロプロ」 Font ProPro
+
+![](title.png)
 
 音楽CD「[プログラミング・プロムナード](https://pronama.jp/2023/08/16/interview-programimng-promenade/)」に付属するMICR（磁気インク文字認識）系のフォントです。
 
@@ -17,6 +19,7 @@ No redistribution of files
 * アルファベット一部
 * 数字
 * 一部の文字のみカーニング（特定の文字と文字の間隔）を設定しています
+* 複数の字形のある文字があります（「プ」など）。OpenTypeの異字体(aalt)、文字のバリエーション(cv01, ...）に設定しています。Adobe Illustratorなど対応したアプリで参照できます。WebブラウザーとCSSで表示も可能です。
 
 ## 公開しているファイルに関して
 
