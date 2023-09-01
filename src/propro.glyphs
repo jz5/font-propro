@@ -20,6 +20,8 @@ featurePrefixes = (
 {
 automatic = 1;
 code = "languagesystem DFLT dflt;
+
+languagesystem kana dflt;
 ";
 name = Languagesystems;
 }
@@ -30,6 +32,24 @@ automatic = 1;
 code = "feature cv01;
 ";
 tag = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_kana_1 {
+	lookupflag 0;
+	sub husmall-kata semivoicedcomb-kana by husmall-kata_semivoicedcomb-kana;
+	sub se-kata semivoiced-kana by se-kata_semivoiced-kana;
+	sub se-kata semivoicedcomb-kana by se-kata_semivoicedcomb-kana;
+	sub to-kata semivoiced-kana by to-kata_semivoiced-kana;
+	sub to-kata semivoicedcomb-kana by to-kata_semivoicedcomb-kana;
+	sub tu-kata semivoiced-kana by tu-kata_semivoiced-kana;
+	sub tu-kata semivoicedcomb-kana by tu-kata_semivoicedcomb-kana;
+} ccmp_kana_1;
+
+script kana;
+lookup ccmp_kana_1;
+";
+tag = ccmp;
 },
 {
 automatic = 1;
@@ -45,7 +65,9 @@ sub ha-kata by ha-kata.cv01;
 sub ba-kata by ba-kata.cv01;
 sub pa-kata by pa-kata.cv01;
 sub pu-kata by pu-kata.cv01;
+sub yo-kata by yo-kata.cv01;
 sub ru-kata by ru-kata.cv01;
+sub husmall-kata_semivoicedcomb-kana by husmall-kata_semivoicedcomb-kana.cv01;
 sub nine by nine.cv01;
 sub prolonged-kana by prolonged-kana.cv01;
 ";
@@ -3937,7 +3959,7 @@ unicode = 12454;
 },
 {
 glyphname = "usmall-kata";
-lastChange = "2023-07-23 13:25:56 +0000";
+lastChange = "2023-09-01 06:49:45 +0000";
 layers = (
 {
 layerId = m01;
@@ -4146,7 +4168,7 @@ unicode = 12457;
 },
 {
 glyphname = "ka-kata";
-lastChange = "2023-07-21 07:26:05 +0000";
+lastChange = "2023-09-01 06:49:57 +0000";
 layers = (
 {
 layerId = m01;
@@ -4459,6 +4481,25 @@ width = 692;
 }
 );
 unicode = 12463;
+},
+{
+glyphname = "kusmall-kata";
+lastChange = "2023-09-01 04:32:32 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "ku-kata";
+scale = (0.75,0.75);
+}
+);
+width = 535;
+}
+);
+unicode = 12784;
 },
 {
 glyphname = "gu-kata";
@@ -4922,6 +4963,25 @@ width = 726;
 unicode = 12471;
 },
 {
+glyphname = "sismall-kata";
+lastChange = "2023-09-01 06:50:05 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "si-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12785;
+},
+{
 glyphname = "zi-kata";
 lastChange = "2023-07-21 07:28:15 +0000";
 layers = (
@@ -5016,6 +5076,25 @@ width = 726;
 }
 );
 unicode = 12473;
+},
+{
+glyphname = "susmall-kata";
+lastChange = "2023-09-01 04:32:42 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "su-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12786;
 },
 {
 glyphname = "zu-kata";
@@ -5584,7 +5663,7 @@ unicode = 12484;
 },
 {
 glyphname = "tusmall-kata";
-lastChange = "2023-07-26 16:29:27 +0000";
+lastChange = "2023-09-01 06:48:48 +0000";
 layers = (
 {
 layerId = m01;
@@ -5603,7 +5682,7 @@ unicode = 12483;
 },
 {
 glyphname = "du-kata";
-lastChange = "2023-07-26 16:32:15 +0000";
+lastChange = "2023-09-01 04:40:07 +0000";
 layers = (
 {
 layerId = m01;
@@ -5743,7 +5822,7 @@ unicode = 12487;
 },
 {
 glyphname = "to-kata";
-lastChange = "2023-07-31 11:09:17 +0000";
+lastChange = "2023-09-01 06:49:27 +0000";
 layers = (
 {
 layerId = m01;
@@ -5798,6 +5877,25 @@ width = 594;
 }
 );
 unicode = 12488;
+},
+{
+glyphname = "tosmall-kata";
+lastChange = "2023-09-01 04:33:01 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "to-kata";
+scale = (0.75,0.75);
+}
+);
+width = 462;
+}
+);
+unicode = 12787;
 },
 {
 glyphname = "do-kata";
@@ -6050,6 +6148,25 @@ width = 649;
 unicode = 12492;
 },
 {
+glyphname = "nusmall-kata";
+lastChange = "2023-09-01 04:33:16 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "nu-kata";
+scale = (0.75,0.75);
+}
+);
+width = 503;
+}
+);
+unicode = 12788;
+},
+{
 glyphname = "ne-kata";
 lastChange = "2023-07-21 07:26:05 +0000";
 layers = (
@@ -6274,6 +6391,25 @@ width = 660;
 unicode = 12495;
 },
 {
+glyphname = "hasmall-kata";
+lastChange = "2023-09-01 04:33:43 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "ha-kata";
+scale = (0.75,0.75);
+}
+);
+width = 511;
+}
+);
+unicode = 12789;
+},
+{
 glyphname = "ba-kata";
 lastChange = "2023-07-28 06:15:36 +0000";
 layers = (
@@ -6384,6 +6520,25 @@ width = 660;
 unicode = 12498;
 },
 {
+glyphname = "hismall-kata";
+lastChange = "2023-09-01 04:33:57 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "hi-kata";
+scale = (0.75,0.75);
+}
+);
+width = 511;
+}
+);
+unicode = 12790;
+},
+{
 glyphname = "bi-kata";
 lastChange = "2023-07-21 07:30:29 +0000";
 layers = (
@@ -6407,7 +6562,7 @@ unicode = 12499;
 },
 {
 glyphname = "pi-kata";
-lastChange = "2023-07-28 06:23:21 +0000";
+lastChange = "2023-09-01 06:48:07 +0000";
 layers = (
 {
 layerId = m01;
@@ -6551,6 +6706,25 @@ width = 726;
 unicode = 12501;
 },
 {
+glyphname = "husmall-kata";
+lastChange = "2023-09-01 04:34:15 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "hu-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12791;
+},
+{
 glyphname = "bu-kata";
 lastChange = "2023-07-21 07:28:15 +0000";
 layers = (
@@ -6644,6 +6818,25 @@ width = 726;
 }
 );
 unicode = 12504;
+},
+{
+glyphname = "hesmall-kata";
+lastChange = "2023-09-01 04:34:30 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "he-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12792;
 },
 {
 glyphname = "be-kata";
@@ -6806,6 +6999,25 @@ width = 726;
 unicode = 12507;
 },
 {
+glyphname = "hosmall-kata";
+lastChange = "2023-09-01 04:34:44 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "ho-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12793;
+},
+{
 glyphname = "bo-kata";
 lastChange = "2023-07-21 07:28:15 +0000";
 layers = (
@@ -6829,7 +7041,7 @@ unicode = 12508;
 },
 {
 glyphname = "po-kata";
-lastChange = "2023-07-23 11:37:52 +0000";
+lastChange = "2023-09-01 06:49:08 +0000";
 layers = (
 {
 layerId = m01;
@@ -7076,6 +7288,25 @@ width = 726;
 }
 );
 unicode = 12512;
+},
+{
+glyphname = "musmall-kata";
+lastChange = "2023-09-01 04:35:08 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "mu-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12794;
 },
 {
 glyphname = "me-kata";
@@ -7637,6 +7868,25 @@ width = 726;
 unicode = 12521;
 },
 {
+glyphname = "rasmall-kata";
+lastChange = "2023-09-01 04:35:29 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "ra-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12795;
+},
+{
 glyphname = "ri-kata";
 lastChange = "2023-07-29 00:42:43 +0000";
 layers = (
@@ -7714,6 +7964,25 @@ width = 594;
 }
 );
 unicode = 12522;
+},
+{
+glyphname = "rismall-kata";
+lastChange = "2023-09-01 06:48:30 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "ri-kata";
+scale = (0.75,0.75);
+}
+);
+width = 462;
+}
+);
+unicode = 12796;
 },
 {
 glyphname = "ru-kata";
@@ -7800,6 +8069,25 @@ width = 726;
 unicode = 12523;
 },
 {
+glyphname = "rusmall-kata";
+lastChange = "2023-09-01 06:49:17 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "ru-kata";
+scale = (0.75,0.75);
+}
+);
+width = 561;
+}
+);
+unicode = 12797;
+},
+{
 glyphname = "re-kata";
 lastChange = "2023-07-21 07:39:19 +0000";
 layers = (
@@ -7866,6 +8154,25 @@ width = 624;
 }
 );
 unicode = 12524;
+},
+{
+glyphname = "resmall-kata";
+lastChange = "2023-09-01 04:36:12 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "re-kata";
+scale = (0.75,0.75);
+}
+);
+width = 484;
+}
+);
+unicode = 12798;
 },
 {
 glyphname = "ro-kata";
@@ -7992,6 +8299,25 @@ width = 660;
 }
 );
 unicode = 12525;
+},
+{
+glyphname = "rosmall-kata";
+lastChange = "2023-09-01 06:49:03 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "ro-kata";
+scale = (0.75,0.75);
+}
+);
+width = 511;
+}
+);
+unicode = 12799;
 },
 {
 glyphname = "wa-kata";
@@ -9362,6 +9688,150 @@ width = 726;
 );
 },
 {
+glyphname = "se-kata_semivoicedcomb-kana";
+lastChange = "2023-09-01 04:37:55 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "se-kata";
+},
+{
+alignment = -1;
+pos = (600,0);
+ref = "semivoicedcomb-kana";
+}
+);
+width = 873;
+}
+);
+},
+{
+glyphname = "se-kata_semivoiced-kana";
+lastChange = "2023-09-01 04:39:10 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "se-kata_semivoicedcomb-kana";
+}
+);
+width = 873;
+}
+);
+},
+{
+glyphname = "tu-kata_semivoicedcomb-kana";
+lastChange = "2023-09-01 04:39:20 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "tu-kata";
+},
+{
+alignment = -1;
+pos = (600,0);
+ref = "semivoicedcomb-kana";
+}
+);
+width = 873;
+}
+);
+},
+{
+glyphname = "tu-kata_semivoiced-kana";
+lastChange = "2023-09-01 04:39:34 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "tu-kata_semivoicedcomb-kana";
+}
+);
+width = 873;
+}
+);
+},
+{
+glyphname = "to-kata_semivoicedcomb-kana";
+lastChange = "2023-09-01 04:41:25 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = "to-kata";
+},
+{
+alignment = -1;
+pos = (368,-132);
+ref = "semivoicedcomb-kana";
+}
+);
+width = 641;
+}
+);
+},
+{
+glyphname = "to-kata_semivoiced-kana";
+lastChange = "2023-09-01 04:41:36 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+ref = "to-kata_semivoicedcomb-kana";
+}
+);
+width = 641;
+}
+);
+},
+{
+glyphname = "husmall-kata_semivoicedcomb-kana";
+lastChange = "2023-09-01 04:44:46 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "pu-kata";
+scale = (0.75,0.75);
+}
+);
+width = 663;
+}
+);
+},
+{
+glyphname = "husmall-kata_semivoicedcomb-kana.cv01";
+lastChange = "2023-09-01 04:45:36 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+alignment = -1;
+pos = (8,0);
+ref = "pu-kata.cv01";
+scale = (0.75,0.75);
+}
+);
+width = 696;
+}
+);
+},
+{
 glyphname = zero;
 lastChange = "2023-07-28 06:39:19 +0000";
 layers = (
@@ -10447,6 +10917,9 @@ m01 = {
 "de-kata" = {
 "ba-kata" = -33;
 };
+"e-kata" = {
+"to-kata" = 16;
+};
 "ge-kata" = {
 "prolonged-kana" = -66;
 };
@@ -10456,6 +10929,9 @@ m01 = {
 "gu-kata" = {
 "ra-kata" = -66;
 };
+"ha-kata" = {
+"sismall-kata" = 8;
+};
 "hu-kata" = {
 "ismall-kata" = -66;
 "ko-kata" = -16;
@@ -10464,6 +10940,10 @@ m01 = {
 "ko-kata" = {
 "a-kata" = 16;
 "n-kata" = 16;
+"rosmall-kata" = 16;
+};
+"ku-kata" = {
+"rusmall-kata" = -16;
 };
 "ma-kata" = {
 "i-kata" = -66;
@@ -10487,9 +10967,11 @@ m01 = {
 };
 "pi-kata" = {
 "prolonged-kana" = -33;
+"rismall-kata" = -33;
 };
 "po-kata" = {
 "i-kata" = -16;
+"tusmall-kata" = -16;
 };
 "prolonged-kana" = {
 "mu-kata" = -33;
@@ -10505,8 +10987,14 @@ m01 = {
 "re-kata" = {
 "to-kata" = 8;
 };
+"rismall-kata" = {
+"ka-kata" = -16;
+};
 "ro-kata" = {
 "gu-kata" = 0;
+};
+"rosmall-kata" = {
+"po-kata" = 16;
 };
 "ru-kata" = {
 "da-kata" = -16;
@@ -10539,6 +11027,9 @@ m01 = {
 };
 "u-kata" = {
 "n-kata" = 16;
+};
+"usmall-kata" = {
+"pi-kata" = 16;
 };
 "za-kata" = {
 "i-kata" = -33;
@@ -10616,6 +11107,6 @@ name = "新規ステム";
 }
 );
 unitsPerEm = 1000;
-versionMajor = 1;
+versionMajor = 2;
 versionMinor = 0;
 }
