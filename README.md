@@ -22,6 +22,8 @@ No redistribution of files
 * 一部の文字のみカーニング（特定の文字と文字の間隔）を設定しています
 * 複数の字形のある文字があります（「プ」など）。OpenTypeの異字体(aalt)、文字のバリエーション(ss01, cv01, ...）に設定しています。Adobe Illustratorなど対応したアプリで参照できます。WebブラウザーとCSSで表示も可能です。
 
+[Webフォントサンプル](https://jz5.github.io/font-propro/)
+
 ## 公開しているファイルに関して
 
 ### フォルダー
